@@ -5,6 +5,13 @@
   "version": "0.2.0",
   "configurations": [
     {
+      "type": "pwa-chrome",
+      "request": "launch",
+      "name": "vue3-demo-webpack",
+      "url": "http://localhost:3344",
+      "webRoot": "${workspaceFolder}/examples/vue3-demo-webpack"
+    },
+    {
       "name": "Jest",
       "type": "node",
       "request": "launch",
@@ -21,7 +28,7 @@
       "console": "integratedTerminal",
       "sourceMaps": true,
       "windows": {
-        "program": "${workspaceFolder}/node_modules/jest/bin/jest",
+        "program": "${workspaceFolder}/node_modules/jest/bin/jest"
       }
     }
   ]

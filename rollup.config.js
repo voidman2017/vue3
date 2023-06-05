@@ -92,6 +92,14 @@ function createConfig(format, output, plugins = []) {
 
   output.exports = isCompatPackage ? 'auto' : 'named'
   output.sourcemap = !!process.env.SOURCE_MAP
+  output.sourcemapPathTransform = (relativeSourcePath, sourcemapPath) => {
+    const newSourcePath = path.join(
+      path.dirname(sourcemapPath),
+      relativeSourcePath
+    )
+    return newSourcePath
+  }
+
   output.externalLiveBindings = false
 
   if (isGlobalBuild) {
