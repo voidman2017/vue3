@@ -8,6 +8,7 @@
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
+    "@vue/reactivity": "file:.yalc/@vue/reactivity",
     "core-js": "^3.8.3",
     "vue": "3.2.37"
   },
